@@ -32,8 +32,6 @@ O teste de UI lê o nome e o filme cadastrado pela aplicação anterior e realiz
 
 *Acesse a raiz do projeto via Prompt de comando: e use o comando:* ``` mvn test -Dtest=br.com.automacao.UI.PesquisaGoogleTeste ``` 
 
-Após a execução do teste de UI, um arquivo txt com o resultado é criado dentro da pasta Reports.
-
 ## Teste de API - Get
 
 Teste que realizar um get no endpoint *https://jsonplaceholder.typicode.com/todos/1* e valida se o status de retorno esta ok (200), além do texto em "title" e valor em "completed".
