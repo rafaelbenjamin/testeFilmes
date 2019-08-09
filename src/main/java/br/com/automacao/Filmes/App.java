@@ -20,7 +20,7 @@ public class App {
 			diretor.dataNascimento = leitor.nextLine();
 			System.out.println("Digite o nome do filme: ");
 			filme.nome = leitor.nextLine();
-			System.out.println("Digite o ano de lançamento do filme: ");
+			System.out.println("Digite o ano de lancamento do filme: ");
 			filme.anoLancamento = leitor.next();
 			System.out.println("Digite SAIR para encerrar, ou enter para cadastrar um novo registro ");
 			continuar = leitor.nextLine();
@@ -30,7 +30,7 @@ public class App {
 			diretores.add(diretor.dataNascimento);
 			diretores.add(filme.nome);
 			diretores.add(filme.anoLancamento);
-			
+
 			geral.add(diretores);
 
 		} while (!continuar.toUpperCase().equals("SAIR"));
@@ -38,6 +38,7 @@ public class App {
 		leitor.close();
 
 		ExportarCsv.ExportarDiretores(geral);
-		
+
 	}
+
 }

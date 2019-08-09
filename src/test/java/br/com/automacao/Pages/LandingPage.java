@@ -20,11 +20,8 @@ public class LandingPage extends BasePage {
 	WebElement txtBarraPesquisa;
 
 	public ResultadosPage realizarPesquisa(String texto) {
-
 		txtBarraPesquisa.sendKeys(texto);
-
 		txtBarraPesquisa.sendKeys(Keys.ENTER);
-
 		return new ResultadosPage(driver);
 	}
 

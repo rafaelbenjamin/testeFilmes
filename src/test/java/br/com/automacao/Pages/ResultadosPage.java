@@ -22,10 +22,8 @@ public class ResultadosPage extends BasePage {
 	WebElement lblResultadosAproximados;
 
 	public String retornaResultados() {
-
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("resultStats")));
-
 		return lblResultadosAproximados.getText();
 	}
 }
